@@ -1,0 +1,12 @@
+#accordion .card .card-link
+{
+    position: relative;
+    display: block;
+}
+
+#accordion .card .card-link .fa
+{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
