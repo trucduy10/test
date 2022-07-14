@@ -68,7 +68,7 @@
                 <hr class="bg-primary w-25 ml-0">
                 <p><a href="">About Us</a></p>
                 <p><a href="{{Route('airfpt.user.homeNews')}}">News</a></p>
-                <p><a href="">Destinations</a></p>
+                
             </div> 
             <div class="col-md-6 col-lg-3"><br>
                 <h4>CONTACT</h4>

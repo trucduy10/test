@@ -8,9 +8,9 @@ and is wrapped around the whole page content, except for the footer in this exam
   <div class="w3-content" style="max-width:1000px">
 
     <!-- Header -->
-    <header class="w3-container w3-center w3-padding-32">
-      <h1><b>BOOKING INFORMATION</b></h1>
-      <h3>Welcome to the Air FPT </h3>
+    <header class="w3-container w3-center " style="padding-top: 90px; padding-bottom: 10px;">
+      <h1><b>PASSENGER INFORMATION</b></h1>
+      <h3 style="color: #FF1616;">Welcome to the Air FPT </h3>
     </header>
 
     <!-- Grid -->
