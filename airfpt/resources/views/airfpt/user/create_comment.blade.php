@@ -77,18 +77,18 @@
                         <div class="col-md-8">
                             <div class="card">
                                 <div class="card-body">
-                                @if(isset($comments))
+                                    @if(isset($comments))
                                     @foreach($comments as $c)
                                     <div class="container mt-3">
-                                  
+
                                         <div class="media border p-3">
                                             <img src=" {{ asset('images/comment.png') }}" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
                                             <div class="media-body">
                                                 <h4 style="color: green;">@ {{ $c->user_name }} </h4>
                                                 <p>{{ $c->comment }}</p>
-                                                
+
                                                 <div class="media p-3">
-                                                    <img  src=" {{ asset('images/comment2.png') }}" alt="Jane Doe" class="mr-3 mt-3 rounded-circle" style="width:45px;">
+                                                    <img src=" {{ asset('images/comment2.png') }}" alt="Jane Doe" class="mr-3 mt-3 rounded-circle" style="width:45px;">
                                                     <div class="media-body">
                                                         <h4 style="color: blue;">@ Admin </h4>
                                                         <p> {{ $c->reply }}</p>
@@ -99,46 +99,13 @@
                                     </div>
                                     @endforeach
                                     @endif
-
-
-                                    <!-- <h4>Display Comments</h4>
-                                    @if(isset($comments))
-                                    @foreach($comments as $c)
-                                    <div class="display-comment">
-                                        <strong> {{ $c->user_name }}</strong>
-                                        <p> {{ $c->comment }}
-                                        <form method="post">
-                                            <div class="form-group">
-                                                <input type="text" name="comment_body" class="form-control" />
-                                                {{ $c->reply }}
-                                            </div>
-                                            <div class="form-group">
-                                                <input type="submit" class="btn btn-warning" value="Add Comment" />
-                                            </div>
-                                        </form>
-                                        </p>
-
-                                    </div>
-                                    @endforeach
-                                    @endif
-                                    <hr /> -->
-
-
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
-
             </div>
-            <br>
-
-            <div style="padding-top: 20px; padding-bottom: 20px;">
-
-            </div>
-
+            
         </div>
     </div>
 </div>
