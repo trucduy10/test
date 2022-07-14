@@ -38,61 +38,12 @@
                                 <p>Member</p>
                             </a>
                         </li>
-                        <li class="nav-item has-treeview">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-tachometer-alt"></i>
-                                <p>
-                                    News
-                                    <i class="right fas fa-angle-left"></i>
-                                </p>
+
+                        <li class="nav-item">
+                            <a href="{{ route('admin.comment.index') }}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>View Feedback</p>
                             </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="{{ route('admin.news.index') }}" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>View News</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="{{ route('admin.news.create') }}" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Create a News</p>
-                                    </a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a href="{{ route('airfpt.user.homeNews') }}" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>News Home</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item has-treeview">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-tachometer-alt"></i>
-                                <p>
-                                    Feedback
-                                    <i class="right fas fa-angle-left"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="{{ route('admin.comment.index') }}" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>View Feedback</p>
-                                    </a>
-                                </li>
-
-
-                                <li class="nav-item">
-                                    <a href="{{ route('airfpt.comment') }}" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>News Home Feedback</p>
-                                    </a>
-                                </li>
-                            </ul>
-
                         </li>
 
                         <li class="nav-item">
@@ -109,6 +60,37 @@
                         </li>
                     </ul>
                 </li>
+
+
+                <li class="nav-item has-treeview">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                        <p>
+                            News
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+
+                        <li class="nav-item">
+                            <a href="{{ route('admin.news.create') }}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Create a News</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="{{ route('airfpt.user.homeNews') }}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>News Home</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+
+
+
 
                 <!-- Flights -->
                 <li class="nav-item has-treeview">
