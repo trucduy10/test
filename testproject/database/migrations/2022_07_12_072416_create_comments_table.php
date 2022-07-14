@@ -18,7 +18,7 @@ return new class extends Migration
             $table->integer('mem_id')->unsigned();
             $table->string('user_name')->nullable();
             $table->string('comment', 300)->nullable();
-            $table->foreign('mem_id')->references('id')->on('user')->onDelete('cascade');
+             $table->foreign('mem_id')->references('id')->on('user')->onDelete('cascade');
             $table->foreign('user_name')->references('name')->on('users')->onDelete('cascade');
             $table->string('reply')->nullable();
             $table->timestamps();

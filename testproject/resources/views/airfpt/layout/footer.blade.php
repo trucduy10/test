@@ -80,7 +80,6 @@
                 <hr class="bg-primary w-25 ml-0">
                 <p><a href="{{Route('airfpt.term_con')}}">Terms & Conditions</a></p>
                 <p><a href="{{Route('airfpt.faqs')}}">FAQs</a></p>
-                <p><a href="{{Route('airfpt.user.create_comment')}}">Customer Care</a></p>
             </div>
         </div> 
         <hr class="bg-primary d-block w-25 mx-auto mb-4 mt-0">

@@ -48,16 +48,7 @@
 </body>
 <script src="js/userIndex.js"></script>
 
-<!-- <script>
-    $('.indexForm').click(function() {
-        $('body').toggleClass('dark');
-    });
 
-    $('.indexForm)').mouseout(function() {
-        $('body').toggleClass('dark');
-    });
-
-</script> -->
 
 
 </html>

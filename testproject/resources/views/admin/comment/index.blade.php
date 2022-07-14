@@ -52,7 +52,7 @@
                                 <td>{{ $c->user_name }}</td>
                                 <td>{{ $c->comment }}</td>
                                 <td>{{ $c->reply }}</td>
-                                <td>{{ $c->created_at }}</td>
+                                <td>{{ $c->created_at }}</td> 
                                 <td>{{ $c->updated_at }}</td>
 
                                 <td class="text-right">

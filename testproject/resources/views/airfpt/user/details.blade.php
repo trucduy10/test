@@ -4,7 +4,7 @@
 
 
 
-<section class="content light-grey" style="padding-top: 70px; padding-bottom: 70px;">
+<section class="content light-grey" style="padding-top: 70px; padding-bottom: 70px;"> 
 
 
     <!-- w3-content defines a container for fixed size centered content, 

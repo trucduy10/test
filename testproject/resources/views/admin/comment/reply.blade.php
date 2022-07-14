@@ -31,7 +31,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="txt-id">Member Id</label>
-                                <input type="text" class="form-control" id="txt-id" name="mem_id" placeholder="1" value="{{ $c->id }}" readonly>
+                                <input type="text" class="form-control" id="txt-id" name="mem_id" placeholder="1" value="{{ $c->mem_id }}" readonly>
                             </div>
                             <div class="form-group">
                                 <label for="txt-user_name">User name</label>

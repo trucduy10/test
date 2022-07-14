@@ -1,8 +1,13 @@
 @extends('airfpt.layout.layout')
 @section('title', 'Term & Conditions')
 @section('content')
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+
 <div class="container" style="padding-top: 70px; padding-bottom: 70px;">
     <br>
     <center>
@@ -65,42 +70,6 @@
 
                 </div>
                 <br>
-                <!-- <p><span style="font-size:20px;"><strong>All Feedback</strong></span></p>
-                @foreach($comments as $c)
-                <div class="row" style="padding-top: 20px; padding-bottom: 20px;">
-                    <div class="col-sm-2 " style=" text-align: right;">
-                        <div class="well">
-                            <img src="{{ asset('./images/comment.png') }}" class="img-circle" width="40%" alt="Avatar">
-                            <p style="color: green;">@ {{ $c->user_name }}</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-10">
-                        <div class="well">
-                            <p>{{ $c->comment }}</p>
-                        
-                            <div class="row" style="padding-top: 20px; padding-bottom: 20px;">
-                                <div class="col-sm-2 " style=" text-align: right;">
-                                    <div class="well">
-                                        <img src="{{ asset('./images/comment2.png') }}" class="img-circle" width="40%" alt="Avatar">
-                                        <p style="color: green;">@ Admin</p>
-                                    </div>
-                                </div>
-                                <div class="col-sm-10">
-                                    <div class="well">
-
-                                        <p>{{ $c->reply }}</p>
-                                    </div>
-
-                                </div>
-                                <br>
-                            </div>
-                        
-                        </div>
-
-                    </div>
-                    <br>
-                </div>
-                @endforeach -->
 
 
                 <div class="container">
@@ -108,12 +77,36 @@
                         <div class="col-md-8">
                             <div class="card">
                                 <div class="card-body">
+                                @if(isset($comments))
+                                    @foreach($comments as $c)
+                                    <div class="container mt-3">
+                                  
+                                        <div class="media border p-3">
+                                            <img src=" {{ asset('images/comment.png') }}" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+                                            <div class="media-body">
+                                                <h4 style="color: green;">@ {{ $c->user_name }} </h4>
+                                                <p>{{ $c->comment }}</p>
+                                                
+                                                <div class="media p-3">
+                                                    <img  src=" {{ asset('images/comment2.png') }}" alt="Jane Doe" class="mr-3 mt-3 rounded-circle" style="width:45px;">
+                                                    <div class="media-body">
+                                                        <h4 style="color: blue;">@ Admin </h4>
+                                                        <p> {{ $c->reply }}</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    @endforeach
+                                    @endif
 
-                                    <h4>Display Comments</h4>
+
+                                    <!-- <h4>Display Comments</h4>
+                                    @if(isset($comments))
                                     @foreach($comments as $c)
                                     <div class="display-comment">
-                                        <strong>{{ $c->user_name }}</strong>
-                                        <p>{{ $c->comment }}
+                                        <strong> {{ $c->user_name }}</strong>
+                                        <p> {{ $c->comment }}
                                         <form method="post">
                                             <div class="form-group">
                                                 <input type="text" name="comment_body" class="form-control" />
@@ -127,14 +120,17 @@
 
                                     </div>
                                     @endforeach
-                                    <hr />
-                                    <h4>Add comment</h4>
+                                    @endif
+                                    <hr /> -->
+
 
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+
 
             </div>
             <br>

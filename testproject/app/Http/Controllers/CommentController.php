@@ -19,9 +19,14 @@ class CommentController extends Controller
 
 
     public function create_comment()
-    {
-        $comments = Comments::latest()->get();
-
+    {$comments = null;
+        if(Auth::guard('web')->check()){
+            $member = Auth::guard('web')->user();
+            $comments = Comments::where([
+                ['mem_id',$member->id],
+            ])->get();
+        }
+  
         return view('airfpt.user.create_comment', ['comments' => $comments]);
     }
 
